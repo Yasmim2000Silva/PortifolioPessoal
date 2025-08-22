@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Portfólio Pessoal — Yasmim Silva">
+
+    <title>Portfólio Pessoal</title>
+
+
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho principal  -->
+    <header id="header">
+        <h1> Portfólio Pessoal</h1> <br>
+
+        <!-- Menu de navegação. Os links s chamam a função JS para trocar o conteúdo -->
+        <nav id="menu">
+            <a href="#" onclick="mostrarConteudo('sobre')">Sobre mim</a>
+            <a href="#" onclick="mostrarConteudo('formacao')">Formação</a>
+            <a href="#" onclick="mostrarConteudo('portfolio')">Portfólio</a>
+            <a href="#" onclick="mostrarConteudo('contato')">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main id="content">
+        <!-- Seção 'Sobre mim' visível por padrão -->
+     <section id="sobre">
+    <div class="container-sobre">
+        <img src="imagens/foto-minha.jpg" alt="Foto de perfil" class="foto-perfil">
+        <div class="info-sobre">
+            <h1 id="nomee">Yasmim Silva</h1>
+            <h2>Sobre mim</h2>
+            <p>
+                Olá! Meu nome é Yasmim, tenho 20 anos e sou apaixonada por tecnologia, animais e aprendizado contínuo. Desde pequena, sempre tive curiosidade em explorar inovações e compreender como as coisas funcionam. 
+                Além disso, adoro conviver com animais — especialmente meu gato José, que é meu fiel companheiro. Acredito que essa convivência ensina valores importantes, como empatia, paciência e responsabilidade.
+            </p>
+            <p>
+                Estudo e busco conhecimento constantemente, pois acredito que o aprendizado é a chave para o crescimento pessoal e profissional. Tecnologia, animais e educação são pilares que guiam minha trajetória e me incentivam a evoluir todos os dias.
+            </p>
+            <h2>Hobbies e interesses</h2>
+            <ul>
+                <li>Jogar videogames, um hobby que acompanho desde criança.</li>
+                <li>Cuidar e brincar com meu gato José.</li>
+                <li>Passear e aproveitar momentos com minha família.</li>
+                <li>Participar das atividades da igreja, que me ajudam a refletir e relaxar.</li>
+                <li>Estudar e explorar novidades em tecnologia e aprender sobre inovações.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+        <!-- Seção 'Formação', inicialmente escondida -->
+        <section id="formacao" class="escondido">
+
+<div class="formacao-box">
+    <img src="imagens/MULHER TRABALHANDO.jpg" alt="Mulher em frente ao computador">
+    <div class="texto-formacao">
+        
+            <h3>Formação</h3>
+            <p>Curso: Bacharelado em Engenharia de Software</p>
+            <p>Instituição:Uninter</p>
+            <p>situação: Em andamento</p><br>
+            <p>Ensino Médio Técnico em Informática</p>
+            <p>situação:Concluído</p> <br>
+            <h3>Idiomas</h3>
+            <ul>
+                <li>Português – Nativo</li>
+                <li>Inglês – Intermediário</li>
+            </ul><br>
+            <h3>Cursos complentares</h3>
+            <ul>
+                <li>Office na Prática – Fundação Bradesco - Carga horária: 48h</li>
+                <li>Informatica - Super Data-  1 ano</li>
+                <li>Fundamentos do Power BI - Carga horária:
+                    37h 
+(Em Andamento) </li>
+            </ul>  
+    </div>
+</div>     
+        </section>
+
+
+
+
+        <!-- Seção 'Portfólio', também inicialmente escondida -->
+       <section id="portfolio" class="escondido">
+    <h2 style="text-align: center;">Portfólio</h2>
+   
+    <p  style="text-align: center;">
+        Aqui estão alguns projetos que desenvolvi, tanto em atividades acadêmicas da faculdade 
+        quanto em estudos pessoais. Cada trabalho teve como objetivo colocar em prática 
+        conceitos de programação, design e desenvolvimento web. 
+    </p>
+
+    <ul>
+        <li>
+            <a href="https://yasmim2000silva.github.io/Leonardo-da-Vince-/curiosidades.html" target="_blank">
+                Curiosidades sobre Leonardo da Vinci
+            </a>
+            <p>
+                Projeto desenvolvido em aula prática de Engenharia de Software. 
+                O foco foi trabalhar HTML e CSS para criar uma página organizada, 
+                trazendo informações e curiosidades sobre o gênio renascentista.
+            </p>
+        </li>
+
+        <li>
+            <a href="https://yasmim2000silva.github.io/Engenheiro-de-Software/" target="_blank">
+                Engenheiro de Software – Funções e Importância
+            </a>
+            <p>
+                Projeto de estudo próprio, criado para praticar estrutura de conteúdo 
+                e experimentação de layout. A página apresenta a profissão de Engenheiro 
+                de Software e sua relevância no mercado de tecnologia.
+            </p>
+        </li>
+
+        <li>
+    <a href="https://yasmim2000silva.github.io/Receitas-de-Doces/#beijinho/" target="_blank">
+        Receitas de Doces – 
+    </a>
+    <p>
+        Exercício de design e estrutura de conteúdo aplicado a receitas. 
+        Inclui passo a passo de doces como beijinho, com dicas de preparo e apresentação.
+    </p>
+</li>
+
+    </ul>
+</section>
+
+
+
+
+        <!-- Seção 'Contato' com formulário visual -->
+        <section id="contato" class="escondido">
+            <h2>Contato</h2>
+            <!-- Formulário  apenas para visualização -->
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <p>© 2025 YASMIM SILVA - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Script JavaScript para alternar visibilidade das seções -->
+    <script>
+        
+        function mostrarConteudo(secao) {
+            // Seleciona todas as seções dentro do main
+            const secoes = document.querySelectorAll('main section');
+            // Esconde todas as seções
+            secoes.forEach(s => s.classList.add('escondido'));
+            // Exibe apenas a seção selecionada
+            document.getElementById(secao).classList.remove('escondido');
+        }
+    </script>
+</body>
+</html>
